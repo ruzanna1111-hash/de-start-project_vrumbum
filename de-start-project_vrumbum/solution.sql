@@ -151,7 +151,7 @@ FROM car_shop.customers c
 JOIN car_shop.sales s ON c.customer_id = s.customer_id /*объединяем три таблицы по общим столбцам*/
 JOIN car_shop.cars ca ON s.car_id = ca.car_id
 JOIN car_shop.brands b ON ca.brand_id = b.brand_id 
-GROUP BY c.person_name /*группируем по имени в алфовитном порядке*/
+GROUP BY c.person_name /*группируем по имени, в алфовитном порядке*/
 ORDER BY c.person_name ASC;
 
 ---- Задание 5. Напишите запрос, который вернёт самую большую и самую маленькую цену продажи автомобиля с разбивкой по стране без учёта скидки. 
